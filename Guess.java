@@ -42,6 +42,9 @@ public class Guess{
       System.out.println("whether the right answer is higher or lower");
       System.out.println("than your guess.");
    }
+   
+   //Starts a game for the user to play. Requests inputs for guesses and provides hints for the 
+   //right answer. Returns the total guesses it took for the game to end.
    public static int playGame(){
       Random rand = new Random();
       Scanner in = new Scanner(System.in);
@@ -64,6 +67,9 @@ public class Guess{
          System.out.println("You got it right in "+total+ " guesses");
       return total;
    }
+   
+   //Accepts the total games played, total guesses made, and least guesses it took to beat one game 
+   //and based off of this information; displays some statistics.
    public static void showStats(int totalGames, int totalGuesses, int leastGuesses){
       System.out.println("Overall results:");
       System.out.println("    total games   = "+totalGames);
